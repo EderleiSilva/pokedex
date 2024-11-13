@@ -131,15 +131,17 @@ npm install axios
 <summary>Instalar componentes do React Font Awesom Docs</summary>
 Os 3 comando abaixo é para instalar a biblioteca de icones do React Font Awesome Docs:
     
-    ```
-    npm install --save @fortawesome/fontawesome-svg-core
-    ```
-    ```
-    npm install --save @fortawesome/free-solid-svg-icons
-    ```
-    ```
-    npm install --save @fortawesome/react-fontawesome
-    ```
+```
+npm install --save @fortawesome/fontawesome-svg-core
+```
+    
+```
+npm install --save @fortawesome/free-solid-svg-icons
+```
+
+```
+npm install --save @fortawesome/react-fontawesome
+```
 </details>
 
 <details>
