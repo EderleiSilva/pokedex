@@ -1,0 +1,13 @@
+p::first-letter{
+    text-transform: uppercase;
+}
+
+h3::first-letter{
+    text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+    .info{
+        flex-direction: column;
+    }
+}
