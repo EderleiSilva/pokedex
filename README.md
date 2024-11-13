@@ -94,6 +94,7 @@ Utilizei o Germini para me da exemplos de como implementar algumas funcionalidad
 <details>
 <summary>Verificar se o node js esta instalado na maquina</summary>
 Para poder instalar os componentes do node js, para verifficar se tem o node em sua maquina pode usar o comando `node -v` se aparecer a versão quer dizer que ele esta instalado. Caso não apareça a versão baixe o node no link: https://nodejs.org/pt
+    
 ```
 node -v
 ```
@@ -102,6 +103,7 @@ node -v
 <details>
 <summary>instalar componentes do NodeJs</summary>
 Com o terminal aberto dentro dentro da raiz do projeto digite o comando abaixo:
+    
 ```
 npm install
 ```
@@ -110,6 +112,7 @@ npm install
 <details>
 <summary>instalar componetes do React Router</summary>
 O comando abaixo é para instalar o React Router que server para fazer a navegação da aplicação:
+    
 ```
 npm install react-router-dom
 ```
@@ -118,6 +121,7 @@ npm install react-router-dom
 <details>
 <summary>Instalar componentes do axios</summary>
 O comando abaixo é para instalar a biblioteca do axios para fazer a busca pela API:
+    
 ```
 npm install axios
 ```
@@ -126,6 +130,7 @@ npm install axios
 <details>
 <summary>Instalar componentes do React Font Awesom Docs</summary>
 Os 3 comando abaixo é para instalar a biblioteca de icones do React Font Awesome Docs:
+    
     ```
     npm install --save @fortawesome/fontawesome-svg-core
     ```
@@ -140,6 +145,7 @@ Os 3 comando abaixo é para instalar a biblioteca de icones do React Font Awesom
 <details>
 <summary>Instalar componetes do Styled Components</summary>
 O comando abaixo serve para instalar a biblioteca do styled que é de onde vem a estilização por pagina feita na aplicação:
+    
 ```
 npm install styled-components
 ```
@@ -148,6 +154,7 @@ npm install styled-components
 <details>
 <summary>Iniciar a aplicação</summary>
 Com todos as aplicações acima instaladas podemos iniciar a aplicação com o comando:
+    
 ```
 npm run dev
 ```
