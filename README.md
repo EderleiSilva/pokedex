@@ -110,50 +110,6 @@ npm install
 </details>
 
 <details>
-<summary>instalar componetes do React Router</summary>
-O comando abaixo é para instalar o React Router que server para fazer a navegação da aplicação:
-    
-```
-npm install react-router-dom
-```
-</details>
-
-<details>
-<summary>Instalar componentes do axios</summary>
-O comando abaixo é para instalar a biblioteca do axios para fazer a busca pela API:
-    
-```
-npm install axios
-```
-</details>
-
-<details>
-<summary>Instalar componentes do React Font Awesom Docs</summary>
-Os 3 comando abaixo é para instalar a biblioteca de icones do React Font Awesome Docs:
-    
-```
-npm install --save @fortawesome/fontawesome-svg-core
-```
-    
-```
-npm install --save @fortawesome/free-solid-svg-icons
-```
-
-```
-npm install --save @fortawesome/react-fontawesome
-```
-</details>
-
-<details>
-<summary>Instalar componetes do Styled Components</summary>
-O comando abaixo serve para instalar a biblioteca do styled que é de onde vem a estilização por pagina feita na aplicação:
-    
-```
-npm install styled-components
-```
-</details>
-
-<details>
 <summary>Iniciar a aplicação</summary>
 Com todos as aplicações acima instaladas podemos iniciar a aplicação com o comando:
     
