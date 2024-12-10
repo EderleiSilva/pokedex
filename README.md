@@ -35,7 +35,7 @@ Nessa pagina foi solicitado para aparecer as seguintes informações:
 ## Ferramentas Utilizadas
 ### Linguagens
 1. Vue.JS
-    - Foi utilizado o VueJs para fazer a criação da aplicação react pois o create-react-app esta caindo em desuso.
+    - Foi utilizado o VueJs para fazer a criação da aplicação, pois o React esta caindo em desuso.
 
 ---
 
