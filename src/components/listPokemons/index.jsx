@@ -14,21 +14,21 @@ function ListPokemons() {
 
     const [filteredPokemon, setFilteredPokemon] = useState('')
     const [searchButton, setSearchButton] = useState('')
-    
+
     const handleInpult = (event) => {
         setFilteredPokemon(event.target.value)
     }
-    
+
     useEffect(() => {
         const lisOfPokemons = async () => {
             const listPokemon = []
 
             try {
-                if(searchButton === ''){
+                if (searchButton === '') {
                     for (let id = 1; id <= show; id++) {
                         listPokemon.push(`${startLinkApi}/pokemon/${id}`)
                     }
-                }else {
+                } else {
                     listPokemon.push(`${startLinkApi}/pokemon/${searchButton}`)
                 }
 
@@ -39,16 +39,16 @@ function ListPokemons() {
                     })
                     .catch(function (error) {
                         console.log(error)
-                        
+
                     });
             } catch (error) {
                 console.log(error)
             }
         }
-        
+
         lisOfPokemons();
     }, [show, searchButton]);
-    
+
     const { theme } = useContext(ThemeContext)
 
     return (
@@ -56,9 +56,9 @@ function ListPokemons() {
             <ul>
                 <li>
                     <Div search>
-                        <Inpult type="text" className="searchPokemon" placeholder="Pesquise um Pokemon" onChange={handleInpult}></Inpult>
-                        <button className="btnSearch" onClick={() => setSearchButton(filteredPokemon)}
-                                style={{fontSize: 25, opacity: '50%', backgroundColor: theme.backgroundColor2}}>
+                        <Inpult type="text" className="searchPokemon" id="input-search" placeholder="Pesquise um Pokemon" onChange={handleInpult}></Inpult>
+                        <button className="btnSearch" id="btn-search" onClick={() => setSearchButton(filteredPokemon)}
+                            style={{ fontSize: 25, opacity: '50%', backgroundColor: theme.backgroundColor2 }}>
                             <FontAwesomeIcon icon={faSearch} />
                         </button>
                     </Div>
@@ -82,7 +82,7 @@ function ListPokemons() {
                 }
             </ul>
             <button className="btnLoadMore" onClick={() => setShow(show < 1020 ? show + 10 : show + 5)}
-                style={{ color: theme.color1, backgroundColor: theme.backgroundColor1, cursor: 'pointer', border: 0}}>
+                style={{ color: theme.color1, backgroundColor: theme.backgroundColor1, cursor: 'pointer', border: 0 }}>
                 Carragar Mais Pokémons
             </button>
         </Div>
