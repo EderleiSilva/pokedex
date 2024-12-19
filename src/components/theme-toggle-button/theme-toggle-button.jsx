@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import { useContext } from "react"
 import { ThemeContext, themes } from "../../contexts/theme-contexts"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdjust } from "@fortawesome/free-solid-svg-icons";

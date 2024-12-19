@@ -5,18 +5,17 @@ export const themes = {
         backgroundColor1: 'silver',
         backgroundColor2: '#eeeeee',
         color1: '#000000',
-        color2:'#000000',
-        backgroundImage: '../../../public/image/light.svg'
+        color2:'#000000'
     },
 
     dark: {
         backgroundColor1: '#313131',
         backgroundColor2: 'silver',
         color1: '#ffffff',
-        color2: '#000000',
-        backgroundImage: '../../../public/image/dark.svg'
+        color2: '#000000'
     }
 }
+
 export const ThemeContext = createContext({})
 
 export const ThemeProvider = (props) => {
