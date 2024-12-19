@@ -38,7 +38,7 @@ function PokemonDetails() {
             setPokemon(pokemons)
         }
         fetchPokemons();
-    }, []);
+    }, [name]);
 
     const [move, setMove] = useState([]);
 
@@ -48,7 +48,7 @@ function PokemonDetails() {
             setMove(moves)
         }
         fetchMove()
-    }, [])
+    }, [name])
 
     const [type, setType] = useState([]);
 
@@ -58,7 +58,7 @@ function PokemonDetails() {
             setType(types)
         }
         fetchType()
-    }, [])
+    }, [name])
 
     const [ability, setAbility] = useState([])
 
@@ -68,7 +68,7 @@ function PokemonDetails() {
             setAbility(abilities)
         }
         fetchAbility()
-    }, [])
+    }, [name])
 
     const [abilities, setAbilities] = useState([])
 
