@@ -27,15 +27,20 @@ Nessa pagina foi solicitado para aparecer as seguintes informações:
 
 - Ao clicar em um pokemon a navegação e o rodapé não some, atualizando somente a parte do meio da aplicação.
 
-<destails>
+<details>
 <summary>Gif da Aplicação</summary>
+<<<<<<< HEAD
     ![Gif da aplicação em execução](<img src='./src/assets/gif/projeto-pokedex.gif' alt='Gif da aplicação em execução' />)
 </destails>
+=======
+<img src='./public/gif/projeto-pokedex.gif' alt='Gif da aplicação em execução' />
+</details>
+>>>>>>> 9897b257413aef68bbc9c8cc0560115b34010312
 
 ## Ferramentas Utilizadas
 ### Linguagens
-1. React
-    - Foi utilizado o vite para fazer a criação da aplicação react pois o create-react-app esta caindo em desuso.
+1. Vue.JS
+    - Foi utilizado o VueJs para fazer a criação da aplicação, pois o React esta caindo em desuso.
 
 ---
 
@@ -53,30 +58,30 @@ Nessa pagina foi solicitado para aparecer as seguintes informações:
     - O CSS foi utilizado de varias maneiras, criando arquivo.css, fazendo a estilização inline no HTML e utilizando a biblioteca styled-components para chegar no estilo final da pagina com exido.
 
 ### Blibliotecas
-<destails>
+<details>
 <summary>React Router</summary>
-    Foi utilizado para fazer a navegação da pagina que vai desda lista de pokemons na pagina home quanto aos detalhes do pokemon quando clicado e a volta para a pagina home utilizando a pokedex na area de navegação da aplicação.
-</destails>
+Foi utilizado para fazer a navegação da pagina que vai desda lista de pokemons na pagina home quanto aos detalhes do pokemon quando clicado e a volta para a pagina home utilizando a pokedex na area de navegação da aplicação.
+</details>
 
-<destails>
+<details>
 <summary>Axios</summary>
-    Foi utilizado para fazer a busca na API PokeApi. Utilizei o axios pois por ele ja retorna uma promise .json sem precisar usar o .json deixando o codigo um pouco menor.
-</destails>
+Foi utilizado para fazer a busca na API PokeApi. Utilizei o axios pois por ele ja retorna uma promise .json sem precisar usar o .json deixando o codigo um pouco menor.
+</details>
 
-<destails>
+<details>
 <summary>API</summary>
-    Para buscar todas as informações necessarias para a aplicação foi feita a busca pela API PokeApi.
-</destails>
+Para buscar todas as informações necessarias para a aplicação foi feita a busca pela API PokeApi.
+</details>
 
-<destails>
+<details>
 <summary>React Font Awesome Docs</summary>
-    Foi utilizando para poder colocar os icones de rede sociais e o icone para trocar o tema da aplicação Lith/Dark.
-</destails>
+Foi utilizando para poder colocar os icones de rede sociais e o icone para trocar o tema da aplicação Lith/Dark.
+</details>
 
-<destails>
+<details>
 <summary>Styled Components</summary>
-    Para fazer a estilização da aplicação diretamente no arquivo da pagina, fazendo com o que a aplicação carregue a estilização somente quando estiver na pagina desejada, ou seja, se estiver na pagina home vai carregar somente a estilização da pagina home e se estiver no detalhe dos pokemons, irá carregar apenas a estilização da pagina de detalhes.
-</destails>
+Para fazer a estilização da aplicação diretamente no arquivo da pagina, fazendo com o que a aplicação carregue a estilização somente quando estiver na pagina desejada, ou seja, se estiver na pagina home vai carregar somente a estilização da pagina home e se estiver no detalhe dos pokemons, irá carregar apenas a estilização da pagina de detalhes.
+</details>
 
 ## Planejamento
 No começo do planejamento foi um pouco complicado, tive alguns erros, guardeis os acertos para poder reutilizar, foi um desafio e tanto. Levei mais ou menos 2 semanas e meia para completar o desafio por completo.
@@ -91,71 +96,29 @@ Utilizei o Germini para me da exemplos de como implementar algumas funcionalidad
 ### comandos para instalar no projeto antes de rodar em sua maquina
 - Abra o terminal na raiz do projeto
 
-<destails>
-    <summary>Verificar se o node js esta instalado na maquina</summary>
-    Para poder instalar os componentes do node js, para verifficar se tem o node em sua maquina pode usar o comando `node -v` se aparecer a versão quer dizer que ele esta instalado. Caso não apareça a versão baixe o node no link: https://nodejs.org/pt
-
-    ```
-    node -v
-    ```
-</details>
-
-<destails>
-<summary>instalar componentes do NodeJs</summary>
-    Com o terminal aberto dentro dentro da raiz do projeto digite o comando abaixo:
-
-    ```
-    npm install
-    ```
-</details>
-
-<destails>
-<summary>instalar componetes do React Router</summary>
-    O comando abaixo é para instalar o React Router que server para fazer a navegação da aplicação:
-
-    ```
-    npm install react-router-dom
-    ```
-</details>
-
-<destails>
-<summary>Instalar componentes do axios</summary>
-    O comando abaixo é para instalar a biblioteca do axios para fazer a busca pela API:
-
-    ```
-    npm install axios
-    ```
-</details>
-
-<destails>
-<summary>Instalar componentes do React Font Awesom Docs</summary>
-    Os 3 comando abaixo é para instalar a biblioteca de icones do React Font Awesome Docs:
-
-    ```
-    npm install --save @fortawesome/fontawesome-svg-core
-    ```
-    ```
-    npm install --save @fortawesome/free-solid-svg-icons
-    ```
-    ```
-    npm install --save @fortawesome/react-fontawesome
-    ```
-</details>
-
-<destails>
-<summary>Instalar componetes do Styled Components</summary>
-    O comando abaixo serve para instalar a biblioteca do styled que é de onde vem a estilização por pagina feita na aplicação:
-
-    ```
-    npm install styled-components
-    ```
+<details>
+<summary>Verificar se o node js esta instalado na maquina</summary>
+Para poder instalar os componentes do node js, para verifficar se tem o node em sua maquina pode usar o comando `node -v` se aparecer a versão quer dizer que ele esta instalado. Caso não apareça a versão baixe o node no link: https://nodejs.org/pt
+    
+```
+node -v
+```
 </details>
 
 <details>
-    <summary>Iniciar a aplicação</summary>
-    Com todos as aplicações acima instaladas podemos iniciar a aplicação com o comando:
+<summary>instalar componentes do NodeJs</summary>
+Com o terminal aberto dentro dentro da raiz do projeto digite o comando abaixo:
+    
+```
+npm install
+```
+</details>
 
-    ```
-    npm run dev
-    ```
+<details>
+<summary>Iniciar a aplicação</summary>
+Com todos as aplicações acima instaladas podemos iniciar a aplicação com o comando:
+    
+```
+npm run dev
+```
 </details>
