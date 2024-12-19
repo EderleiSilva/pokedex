@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.footer .info {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .info .linkDevQuest {
+    text-decoration: underline;
+}

@@ -1,17 +1,18 @@
 import { useContext } from "react"
 import styled, { css } from "styled-components"
 import { ThemeContext } from "../../contexts/theme-contexts"
+import "./footer.css"
 
 function Footer() {
     const { theme } = useContext(ThemeContext)
     return (
-        <Section style={{ color: theme.color1, backgroundColor: theme.backgroundColor1 }}>
-            <Ul>
+        <section className="footer" style={{ color: theme.color1, backgroundColor: theme.backgroundColor1 }}>
+            <ul className="info">
                 <Li>
                     <h3>
-                        Quest do curso <A style={{ color: theme.color1 }}
+                        Quest do curso <a className="linkDevQuest" style={{ color: theme.color1 }}
                             target="_blank" href="https://dev-em-dobro.ticto.club/signin">DevQuest
-                            </A> data como Quest avançada de React
+                            </a> data como Quest avançada de React
                     </h3>
                     <p>Criado em 2024 por Ederlei Pereira</p>
                 </Li>
@@ -42,24 +43,10 @@ function Footer() {
                         </Li>
                     </ul>
                 </Li>
-            </Ul>
-        </Section>
+            </ul>
+        </section>
     )
 }
-
-const Section = styled.section`
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-radius: 20px;
-`
-
-const Ul = styled.ul`
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: space-between;
-`
 
 const Li = styled.li`
     max-width: 50%;
@@ -70,10 +57,6 @@ const Li = styled.li`
         justify-content: space-between; 
         margin-top: 12px;
     `}
-`
-
-const A = styled.a`
-    text-decoration: underline;
 `
 
 const Img = styled.img`
