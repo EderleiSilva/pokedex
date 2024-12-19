@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import styled, { css } from "styled-components"
 import { ThemeContext } from "../../contexts/theme-contexts"
-import "./footer.css"
+import "./index.css"
 
 function Footer() {
     const { theme } = useContext(ThemeContext)
