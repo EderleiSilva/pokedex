@@ -7,11 +7,18 @@
 
 .footer .info {
     display: flex;
-    gap: 50px;
+    gap: 200px;
     align-items: center;
     justify-content: space-between;
 }
 
 .footer .info .linkDevQuest {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .info {
+        gap: 20px;
+        justify-content: center;
+    }
 }

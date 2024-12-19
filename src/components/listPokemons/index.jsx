@@ -56,35 +56,35 @@ function ListPokemons() {
             <ul>
                 <li>
                     <Div search>
-                        <Inpult placeholder="Pesquise um Pokemon" onChange={handleInpult}></Inpult>
-                        <button onClick={() => setSearchButton(filteredPokemon)}
+                        <Inpult type="text" className="searchPokemon" placeholder="Pesquise um Pokemon" onChange={handleInpult}></Inpult>
+                        <button className="btnSearch" onClick={() => setSearchButton(filteredPokemon)}
                                 style={{fontSize: 25, opacity: '50%', backgroundColor: theme.backgroundColor2}}>
                             <FontAwesomeIcon icon={faSearch} />
                         </button>
                     </Div>
                 </li>
             </ul>
-            <Ul>
+            <ul className="listPokemons">
                 {
                     pokemons.filter((pokemon) => pokemon.name.includes(filteredPokemon)).map((pokemon, index) => {
                         return (
                             <Link key={index} to={`/pokemon/${pokemon.name}`}>
-                                <Li className="card"
+                                <li className="cardPokemon"
                                     style={{ color: theme.color1, backgroundColor: theme.backgroundColor1 }}>
-                                    <Img src={pokemon.sprites.front_default}
+                                    <img src={pokemon.sprites.front_default}
                                         style={{ backgroundColor: theme.backgroundColor2 }} />
-                                    <P>N°{pokemon.id}</P>
-                                    <H1 className="namePokemon">{pokemon.name}</H1>
-                                </Li>
+                                    <p>N°{pokemon.id}</p>
+                                    <h1>{pokemon.name}</h1>
+                                </li>
                             </Link>
                         )
                     })
                 }
-            </Ul>
-            <Button className="btn" onClick={() => setShow(show < 1020 ? show + 10 : show + 5)}
+            </ul>
+            <button className="btnLoadMore" onClick={() => setShow(show < 1020 ? show + 10 : show + 5)}
                 style={{ color: theme.color1, backgroundColor: theme.backgroundColor1, cursor: 'pointer', border: 0}}>
                 Carragar Mais Pokémons
-            </Button>
+            </button>
         </Div>
     );
 }
@@ -113,52 +113,6 @@ const Inpult = styled.input`
     padding: 10px;
     width: 300px;
     border: 0;
-`
-
-const Ul = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-`;
-
-const Li = styled.li`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    width: 150px;
-    border: 1px solid;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    color: black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    transition: 0.2s ease-in-out;
-`
-
-const Img = styled.img`
-    width: 100px;
-    margin: 10px 10px 0;
-    border: 1px solid;
-    border-radius: 10px;
-`;
-
-const H1 = styled.h1`
-    font-size: 20px;
-`
-
-const P = styled.p`
-    width: 70%;
-    font-size: 12px;
-`;
-
-const Button = styled.button`
-    text-decoration: none;
-    margin: 50px;
-    padding: 20px 30px;
-    font-size: 20px;
-    border-radius:10px;
-    transition: 0.2s ease-in-out;
 `
 
 export { ListPokemons }
