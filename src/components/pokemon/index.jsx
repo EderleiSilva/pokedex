@@ -121,20 +121,20 @@ function PokemonDetails() {
     const { theme } = useContext(ThemeContext)
 
     return (
-        <Div style={{ color: theme.color2, backgroundColor: theme.backgroundColor2 }}>
+        <section className="pokemonDetails" style={{ color: theme.color2, backgroundColor: theme.backgroundColor2 }}>
             {
                 <ul>
-                    <H1>{pokemon.name}</H1>
-                    <Li className="info">
+                    <h1>{pokemon.name}</h1>
+                    <li className="info">
                         <Ul image>
-                            <Li>
-                                <Img src={`${starLinkImageApi}/${pokemon.id}.png`} />
-                                <Img src={`${starLinkImageBackApi}/${pokemon.id}.png`} />
-                            </Li>
-                            <Li>
-                                <Img src={`${starLinkImageShinyApi}/${pokemon.id}.png`} />
-                                <Img src={`${starLinkImageShinyBackApi}/${pokemon.id}.png`} />
-                            </Li>
+                            <li className="illustration">
+                                <img src={`${starLinkImageApi}/${pokemon.id}.png`} />
+                                <img src={`${starLinkImageBackApi}/${pokemon.id}.png`} />
+                            </li>
+                            <li className="illustration">
+                                <img src={`${starLinkImageShinyApi}/${pokemon.id}.png`} />
+                                <img src={`${starLinkImageShinyBackApi}/${pokemon.id}.png`} />
+                            </li>
                         </Ul>
                         <Ul>
                             <Ul type>
@@ -164,7 +164,7 @@ function PokemonDetails() {
                                 }
                             </Ul>
                         </Ul>
-                    </Li>
+                    </li>
                 </ul>
             }
             <h2>Moves</h2>
@@ -180,18 +180,9 @@ function PokemonDetails() {
                     })
                 }
             </Ul>
-        </Div>
+        </section>
     );
 }
-
-const Div = styled.div`
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px;
-    border-radius: 20px;
-`
 
 const Ul = styled.ul`
     display: flex;
@@ -215,24 +206,6 @@ const Ul = styled.ul`
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     `}
     
-`
-
-const H1 = styled.h1`
-    text-transform: uppercase;
-    text-align: center;
-`
-
-const Li = styled.li`
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-`
-
-const Img = styled.img`
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 `
 
 const P = styled.p`
