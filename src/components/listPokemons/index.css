@@ -1,5 +1,6 @@
 .namePokemon::first-letter {
     text-transform: uppercase;
+    
 }
 
 .card:hover {

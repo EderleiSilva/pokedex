@@ -29,7 +29,7 @@ Nessa pagina foi solicitado para aparecer as seguintes informações:
 
 <destails>
 <summary>Gif da Aplicação</summary>
-    ![Gif da aplicação em execução](<img src='./public/gif/projeto-pokedex.gif' alt='Gif da aplicação em execução' />)
+    ![Gif da aplicação em execução](<img src='./src/assets/gif/projeto-pokedex.gif' alt='Gif da aplicação em execução' />)
 </destails>
 
 ## Ferramentas Utilizadas

@@ -22,21 +22,21 @@ function Footer() {
                             <a 
                             target="_blank" 
                             href="https://www.instagram.com/ederleisilvap/">
-                                <Img typeof="image/svg" src="../../../public/image/instagram.svg" 
+                                <Img typeof="image/svg" src="./src/assets/images/instagram.svg" 
                                 style={{backgroundColor: theme.backgroundColor2}}/>
                             </a>
 
                             <a 
                                 target="_blank" 
                                 href="https://www.linkedin.com/in/ederlei-silva-046380127/">
-                                    <Img typeof="image/svg" src="../../../public/image/linkedin.svg" 
+                                    <Img typeof="image/svg" src="./src/assets/images//linkedin.svg" 
                                     style={{backgroundColor: theme.backgroundColor2}}/>
                             </a>
 
                             <a 
                                 target="_blank" 
                                 href="https://github.com/EderleiSilva">
-                                <Img typeof="image/svg" src="../../../public/image/github.svg" 
+                                <Img typeof="image/svg" src="./src/assets/images/github.svg" 
                                 style={{backgroundColor: theme.backgroundColor2}}/>
                             </a>
                         </Li>
@@ -48,8 +48,10 @@ function Footer() {
 }
 
 const Section = styled.section`
+    display: flex;
+    align-items: center;
     padding: 20px;
-    border-radius: 20px
+    border-radius: 20px;
 `
 
 const Ul = styled.ul`

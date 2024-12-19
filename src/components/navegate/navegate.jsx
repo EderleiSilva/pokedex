@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ThemeToggleButton } from "../theme-toggle-button/theme-toggle-button";
 import { ThemeContext } from "../../contexts/theme-contexts";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 
 function Navegate(){
@@ -11,7 +11,7 @@ function Navegate(){
     
     return (
         <Section style={{ color: theme.color1, backgroundColor: theme.backgroundColor1}}>
-            <Link to='/'><Img src="../../../public/image/pokedex.png" /></Link>
+            <Link to='/'><Img src="./src/assets/images/pokedex.png" /></Link>
             <ThemeToggleButton></ThemeToggleButton>
         </Section>
     )
