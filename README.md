@@ -35,8 +35,8 @@ Nessa pagina foi solicitado para aparecer as seguintes informações:
 
 ## Ferramentas Utilizadas
 ### Linguagens
-1. Vue.JS
-    - Foi utilizado o VueJs para fazer a criação da aplicação, pois o React esta caindo em desuso.
+1. React.js + Vite
+    - Foi utilizado o React.js + Vite para fazer a criação da aplicação.
 
 ---
 
